@@ -1,0 +1,1 @@
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson6\Lesson1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
