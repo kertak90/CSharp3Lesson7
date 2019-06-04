@@ -1,0 +1,7 @@
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\csvParser\bin\Debug\csvParser.exe.config
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\csvParser\bin\Debug\csvParser.exe
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\csvParser\bin\Debug\csvParser.pdb
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\csvParser\obj\Debug\csvParser.csprojAssemblyReference.cache
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\csvParser\obj\Debug\csvParser.csproj.CoreCompileInputs.cache
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\csvParser\obj\Debug\csvParser.exe
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\csvParser\obj\Debug\csvParser.pdb
