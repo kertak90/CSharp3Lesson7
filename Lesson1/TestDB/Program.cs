@@ -10,6 +10,7 @@ namespace TestDB
     {
         static void Main(string[] args)
         {
+            //Тестовое подключение к базе
             using (var db = new Data.SongsDB())
             {
                 foreach(var track in db.Tracks)
