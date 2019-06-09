@@ -384,3 +384,5 @@ D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\Lesson1\obj\Debu
 D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\Lesson1\obj\Debug\Lesson2.csproj.CopyComplete
 D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\Lesson1\obj\Debug\Lesson1.exe
 D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\Lesson1\obj\Debug\Lesson1.pdb
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\Lesson1\bin\Debug\ru\EntityFramework.resources.dll
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\Lesson1\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

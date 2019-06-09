@@ -5,6 +5,7 @@ namespace MailSenderLib.Entityes
 {
     public class MailList : NamedEntity
     {
-        public IEnumerable<MailMessage> Messages { get; set; }
+
+        public virtual IEnumerable<MailMessage> Messages { get; set; }
     }
 }

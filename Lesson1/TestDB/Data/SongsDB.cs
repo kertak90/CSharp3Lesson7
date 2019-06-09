@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,16 +16,18 @@ namespace TestDB.Data
         public SongsDB(string ConnectionString) : base(ConnectionString) { }
         public DbSet<Track> Tracks { get; set; }
     }
-    [Table("SongSet")]
+
+    [Table("SongsSet")]
     public class Track
     {
         [Key]
         public int Id { get; set; }
-        [Required, Column("Track")]
+
+        [Required]        
         public string Name { get; set; }
-        [Required, Column("Artist")]
-        public string ArtistName { get; set; }
+        [Required]
+        public string Artist { get; set; }
         public int Length { get; set; }
-        public TimeSpan TimeLength => TimeSpan.FromSeconds(Length);
+        //public TimeSpan TimeLength => TimeSpan.FromSeconds(Length);
     }
 }

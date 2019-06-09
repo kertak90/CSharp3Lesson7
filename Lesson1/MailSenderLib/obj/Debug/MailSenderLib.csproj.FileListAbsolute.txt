@@ -47,3 +47,14 @@ D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\ob
 D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\obj\Debug\MailSenderLib.csproj.CoreCompileInputs.cache
 D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\obj\Debug\MailSenderLib.exe
 D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\obj\Debug\MailSenderLib.pdb
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\bin\Debug\EntityFramework.dll
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\bin\Debug\EntityFramework.SqlServer.dll
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\bin\Debug\EntityFramework.xml
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\bin\Debug\EntityFramework.SqlServer.xml
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\bin\Debug\ru\EntityFramework.resources.dll
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\obj\Debug\MailSenderLib.csproj.CopyComplete
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\obj\Debug\MailSenderLib.Data.EF.Migrations.Initial.resources
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\obj\Debug\MailSenderLib.csproj.GenerateResource.cache
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\obj\Debug\MailSenderLib.Data.EF.Migrations.RecipientAddDescription.resources
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\MailSenderLib\obj\Debug\MailSenderLib.Data.EF.Migrations.RecipientRenameDescription.resources

@@ -11,3 +11,4 @@ D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\TestDB\obj\Debug
 D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\TestDB\obj\Debug\TestDB.exe
 D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\TestDB\obj\Debug\TestDB.pdb
 D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\TestDB\bin\Debug\ru\EntityFramework.resources.dll
+D:\C# projects\C# 3 обучение\git-CSharp3Lesson7\Lesson1\TestDB\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

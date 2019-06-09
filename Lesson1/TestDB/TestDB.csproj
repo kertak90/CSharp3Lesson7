@@ -52,16 +52,54 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Musics.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Musics.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Musics.cs">
+      <DependentUpon>Musics.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Musics.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Musics.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Musics1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Musics.tt</DependentUpon>
+    </Compile>
     <Compile Include="Data\SongsDB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="Data\Musics.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Musics.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Data\Musics.edmx.diagram">
+      <DependentUpon>Musics.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Musics.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Musics.Context.cs</LastGenOutput>
+      <DependentUpon>Musics.edmx</DependentUpon>
+    </Content>
+    <Content Include="Data\Musics.edmx.sql" />
+    <Content Include="Data\Musics.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Musics1.cs</LastGenOutput>
+      <DependentUpon>Musics.edmx</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
