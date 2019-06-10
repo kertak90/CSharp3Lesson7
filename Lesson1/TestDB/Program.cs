@@ -37,8 +37,6 @@ namespace TestDB
                     Console.WriteLine($"{item.Name} - {item.Count}");
                 }
             }
-
-            
                 
             Console.ReadLine();
         }
