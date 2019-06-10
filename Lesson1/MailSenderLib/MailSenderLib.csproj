@@ -33,7 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
@@ -44,11 +51,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\EF\MailSenderDBContext.cs" />
+    <Compile Include="Data\EF\Migrations\201906081601391_Initial.cs" />
+    <Compile Include="Data\EF\Migrations\201906081601391_Initial.Designer.cs">
+      <DependentUpon>201906081601391_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\EF\Migrations\201906091831513_RecipientAddDescription.cs" />
+    <Compile Include="Data\EF\Migrations\201906091831513_RecipientAddDescription.Designer.cs">
+      <DependentUpon>201906091831513_RecipientAddDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\EF\Migrations\201906091835136_RecipientRenameDescription.cs" />
+    <Compile Include="Data\EF\Migrations\201906091835136_RecipientRenameDescription.Designer.cs">
+      <DependentUpon>201906091835136_RecipientRenameDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\EF\Migrations\Configuration.cs" />
     <Compile Include="Data\TestData.cs" />
     <Compile Include="Entityes\Base\BaseEntity.cs" />
     <Compile Include="Entityes\Base\Human.cs" />
+    <Compile Include="Entityes\Base\NamedEntity.cs" />
     <Compile Include="Entityes\MailList.cs" />
     <Compile Include="Entityes\MailMessage.cs" />
+    <Compile Include="Entityes\Recipient.cs" />
     <Compile Include="Entityes\RecipientsList.cs" />
     <Compile Include="Entityes\SchedulerTask.cs" />
     <Compile Include="Entityes\Sender.cs" />
@@ -68,6 +91,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Services\EF\DataInEF.cs" />
+    <Compile Include="Services\EF\SendersDataInEF.cs" />
     <Compile Include="Services\InMemory\DataInMemory.cs" />
     <Compile Include="Services\InMemory\MailMessageDataInMemory.cs" />
     <Compile Include="Services\InMemory\MailsListDataInMemory.cs" />
@@ -99,14 +124,26 @@
     <None Include="Linq2SQL\MailSenderDB.dbml.layout">
       <DependentUpon>MailSenderDB.dbml</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Data\EF\Migrations\201906081601391_Initial.resx">
+      <DependentUpon>201906081601391_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\EF\Migrations\201906091831513_RecipientAddDescription.resx">
+      <DependentUpon>201906091831513_RecipientAddDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\EF\Migrations\201906091835136_RecipientRenameDescription.resx">
+      <DependentUpon>201906091835136_RecipientRenameDescription.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -54,6 +54,25 @@ namespace MailSenderLib.Services
             }
         }
 
+        public async Task SendAsync(MailMessage Message, Sender From, Recipient To)
+        {
+            using (var client = new SmtpClient(address, port) { Credentials = new NetworkCredential(login, password) })
+            using (var message = new System.Net.Mail.MailMessage())
+            {
+                message.From = new MailAddress(From.Email, From.Name);
+                message.To.Add(new MailAddress(To.Email, To.Name));
+                message.Subject = Message.Subject;
+                message.Body = Message.Body;
+
+                await client.SendMailAsync(message).ConfigureAwait(false);
+            }
+        }
+
+        public async Task SendAsync(MailMessage Message, Sender From, IEnumerable<Recipient> To)
+        {
+            await Task.WhenAll(To.Select(to => SendAsync(Message, From, to)));
+        }
+
         public void SendParallel(MailMessage Message, Sender From, IEnumerable<Recipient> To)
         {
             foreach (var item in To)
