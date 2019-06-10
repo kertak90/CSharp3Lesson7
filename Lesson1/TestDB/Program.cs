@@ -7,41 +7,40 @@ using System.Threading.Tasks;
 namespace TestDB
 {
     class Program
-    {
+    {        
         static void Main(string[] args)
         {
-
-            //Тестовое подключение к базе
+            //3. Есть таблица Users. Столбцы в ней — Id, Name. Написать SQL-запрос, 
+            //который выведет имена пользователей, начинающиеся на 'A' и встречающиеся 
+            //в таблице более одного раза, и их количество.
+            //
+           
             using (var db = new Data.SongsDB())
             {
                 var list = db.Tracks.Where(p => p.Name.StartsWith("A"))
                                         .OrderBy(p=>p.Name)
                                         .ToList();
-                var newList = list.Select(p => new {
-                                            Name = p.Name,
-                                            Count = p.Name.Count()
-                                        });
+                var newList = list.GroupBy(p=>p.Name)
+                    .Select(p => new
+                    {
+                        Name = p.Key,
+                        Count = p.Count()
+                    });
                 Console.WriteLine($"Count - {list.Count()}");
                 foreach(var item in list)
                 {
                     Console.WriteLine($"{item.Name} - {item.Artist}");
                 }
-                Console.WriteLine();
-                Console.WriteLine($"Count - {newList.Count()}");
+                Console.WriteLine();                
                 foreach (var item in newList)
                 {
                     Console.WriteLine($"{item.Name} - {item.Count}");
                 }
             }
-            //using (var db = new Data.MusicsContainer())
-            //{
-            //    var list = db.MusicsSet;
-            //    foreach(var m in list)
-            //    {
-            //        Console.WriteLine($"{m.Artist} - {m.Name}");
-            //    }
-            //}
-            //Console.ReadLine();
+
+            
+                
+            Console.ReadLine();
         }
     }
 }

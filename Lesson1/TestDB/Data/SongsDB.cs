@@ -15,6 +15,7 @@ namespace TestDB.Data
         public SongsDB() : this("name=SongsDB") { }
         public SongsDB(string ConnectionString) : base(ConnectionString) { }
         public DbSet<Track> Tracks { get; set; }
+        public DbSet<Table> TableItems { get; set; }
     }
 
     [Table("SongsSet")]
@@ -29,5 +30,17 @@ namespace TestDB.Data
         public string Artist { get; set; }
         public int Length { get; set; }
         //public TimeSpan TimeLength => TimeSpan.FromSeconds(Length);
+    }
+
+    [Table("Table")]
+    public class Table
+    {
+        [Key]
+        public int Id { get; set; }
+
+        [Required]
+        public string group_id { get; set; }
+        [Required]
+        public string descr { get; set; }        
     }
 }
